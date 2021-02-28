@@ -50,14 +50,7 @@ nav {
     margin: 5px;
     transition: all 0.3s ease;
 }
-
-@media screen and (max-width: 1024px) {
-    .nav-links {
-        width: 60%;
-    }
-}
-
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 335px) {
     .nav {
         height: 100%;
         width: 100%;

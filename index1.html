@@ -1,12 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+   <!--just for glyphicons-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <!--above this is just for glyphicons-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <meta charset="UTF-8">
   <link href="index1-css.css" rel="stylesheet">  
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
+    <!--navigation-->
     <div class="nav">
         <nav>
             <div class="logo">
@@ -26,9 +33,118 @@
         </nav>
     </div>
     <script src="./app.js"></script>
-	
-	
-	
-	
+    <!--navbar upper from it-->
+    <main>
+        <div class="container-2">
+            <div class="right">
+                <div class="image-text">
+                    <img src="pictures/sea-view.png" alt="">
+                    <div class="text-over-image">
+                        <h2>WORLD NEWS</h2>
+                        <hr class="hr">
+                        <p>Lorem ipsum dolor sit amet, in eam odio amet, vix id nullam detracto vidit</p>
+                        <img src="pictures/avatar.png">  
+                    </div>
+                </div>
+
+            </div>
+            <div class="left">
+                <div class="form-contaier">
+                    <form action="/action_page.php">
+                        <label class="label" for="date">Select a date:</label>
+                        <input class="input" type="date" id="date" name="date">
+                        <label class="label" for="txt">Enter the First keywords</label>
+                        <input class="input" type="text" id="txt" name="txt">
+                        <input class="but" type="submit" value="SEARCH">
+                    </form>
+                </div>
+            </div>
+        </div>
+        <hr style="opacity:0.5">
+       <div class="container">
+            <div class="column2">
+                <div class="col2">
+                    <img src="pictures/avatar.png">  
+                    <h2>Phasellus eu nulla malesuada, luctus diam.</h2>   
+                </div>
+                <div class="col2">
+                    <p class="txt">Dignissim rutrum ridiculus lacinia phasellus torquent ad aliquet, nisi dictum cubilia class habitasse commodo, semper potenti nec ac per egestas. Ac volutpat ullamcorper phasellus montes sollicitudin litora ridiculus mi conubia inceptos euismod odio curabitur, tortor eros porta venenatis facilisis quam blandit in ut lobortis consequat justo. Hac libero quisque tortor conubia iaculis</p>
+                </div>
+                <div class="col2">
+                    <p class="txt">Nascetur himenaeos morbi gravida porta sapien justo aliquam pellentesque dapibus curae, cursus ultrices suspendisse cras ligula id aenean vulputate taciti, eleifend eros bibendum scelerisque lobortis venenatis nulla tristique tempus. Quisque eleifend vulputate. </p>
+                    <p style="opacity:0.5"><span class="glyphicon glyphicon-time"></span> 2 min ago </p>      
+                </div>
+            </div>
+        </div>      
+        <hr style="opacity:0.5">
+        
+        <div class="container">
+            <div class="column-image">
+                <img class="container-3-image" src="pictures/elephant-view.png">
+            </div>
+            <div class="column-3">
+                <p class="txt">Lorem ipsum dolor sit amet consectetur adipiscing elit sodales primis, mollis viverra conubia ligula inceptos laoreet libero tortor, nascetur non habitasse iaculis tempor nec egestas fames augue, platea porta integer nostra curae sed arcu. Nec ut diam vulputate ante scelerisque ridiculus lobortis orci mi curae himenaeos quis, senectus curabitur ullamcorper a porttitor nibh fermentum nisi cum morbi aliquam. Vitae pretium vestibulum dui gravida in potenti interdum, class rhoncus neque eget magna at</p>
+                <br>
+                <p class="txt">Ullamcorper porttitor non pharetra cursus nisl mollis pellentesque primis penatibus platea, dictum himenaeos eget mi bibendum ad molestie aliquet curae quis quisque, nunc duis ac at elementum dui integer viverra tempus. Lacinia bibendum diam senectus egestas nec molestie convallis aenean hac tempus, vivamus purus congue euismod fringilla cursus donec est eu blandit platea, feugiat vitae netus orci habitant accumsan placerat morbi nostra. </p>
+            </div>
+        </div>
+    </main>
+    
+    <!--site footer-->
+    <footer class="site-footer">
+        <div class="footer-container">
+          <div class="footer-row">
+          <div class="footer-left">
+            <div>
+              <h4>LOGO</h4>
+            </div>
+          </div>
+          <div class="footer-row">
+            <div>
+              <ul class="footer-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Discovery</a></li>
+                <li><a href="#">Photos</a></li>
+                <li><a href="#">Contact</a></li>
+              </ul>
+            </div>
+            <div>
+              <ul class="footer-links">
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Help</a></li>
+                <li><a href="#">Terms</a></li>
+                <li><a href="#">Guidelines</a></li>
+              </ul>
+            </div>
+            <div>
+              <ul class="footer-links">
+                <li><a href="#">Testimonials</a></li>
+                <li><a href="#">Advertise</a></li>
+                <li><a href="#">Integrations</a></li>
+                <li><a href="#">Careers</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        </div>
+        <div class="footer-container">
+          <div class="footer-row">
+            <div class="footer-middle">
+              <input type="email" id="email" size="30" placeholder="Email"><span class="glyphicon glyphicon-send"></span>
+              <p style="opacity:0.5;">stay in touch with us for freshest products!</p>
+            </div>
+          </div>
+        </div>
+        <div class="footer-container">
+          <div class="footer-row">
+            <div class="footer-right">     
+              <ul class="footer-links-soc">
+                <li><a href="#" class="fa fa-instagram"></a></li>
+                <li><a href="#" class="fa fa-twitter"></a></li>
+                <li><a href="#" class="fa fa-facebook"></a></li>
+              </ul>
+            </div>
+            </div>
+          </div>
 </body>
 </html>

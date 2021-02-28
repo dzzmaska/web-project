@@ -1,6 +1,11 @@
 @import 'nav-css.css';
 @import 'footer-css.css';
+@font-face {
+  font-family: Helvetica;
+  src: url(Helvetica-Font/helvetica-light-587ebe5a59211.ttf);
+}
 main{
+  font-family: Helvetica, Arial, sans-serif!important;
   width:100% !important;
   margin:0 !important;
   padding:0 !important;
@@ -8,13 +13,14 @@ main{
 body {
  background-color:#F6F8F9 !important;
  width:100%;
-
+ font-size:1.5rem;
 }
-.container {
-  flex-wrap:nowrap;
+.container , .container-start{
   box-sizing:border-box;
   display: flex;
+  justify-content: center;
   width:100%;
+  font-size:1.5rem;
 }
 .column {
   justify-items: stretch;
@@ -31,20 +37,55 @@ img{
   margin:0;
   height:auto;
 }
-@media screen and (max-width: 1000px) {
-  .start-page-right-section p,h2,h3{
-    font-size: 0.8rem;
+@media screen and (max-width: 1126px) {
+  body , .container ,h1 , h2 , h3 , h4 , p , h5{
+    font-size: 1.3rem;
   }
-  .start-page-left p,h2,h3{
-    font-size: 0.8rem;
+
+}
+@media screen and (max-width: 950px) {
+  body , .container ,h1 , h2 , h3 , h4 , p , h5{
+    font-size:1rem;
   }
 }
-@media screen and (max-width: 800px) {
-  .start-page-right-section p,h2,h3{
-    font-size: 0.69rem;
+@media screen and (max-width: 768px) {
+  body , .container ,h1 , h2 , h3 , h4 , p , h5{
+    font-size:1.3rem;
   }
-  .start-page-left p,h2,h3{
-	font-size: 0.69rem;
+  .container-start{
+    clear:both;
+    display:block;
+  }
+  .container , .col-3{
+    clear:both;
+    display:block;
+    margin:auto;
+  }
+  .del{
+    position:absolute;
+    visibility:hidden;
+  }
+  .trending-child , .vis{
+    display:inline;
+    margin-left: 1rem;
+    float:left;
+    width:41%;
+  }
+  .trending-child-3{
+    position:absolute;
+    visibility:hidden;
+  }
+
+}
+@media screen and (max-width: 350px) {
+  .column{
+    display:flex;
+  }
+  .trending-child{
+    display: flex;
+  }
+  .trending-child-3{
+    visibility:hidden;
   }
 }
 hr{
@@ -89,7 +130,7 @@ hr{
 .start-page-right {
   background-color:white;
 }
-.trending-child{
+.trending-child , .trending-child-3{
   box-sizing: border-box;
   background-color:white;
   border-radius:5px;

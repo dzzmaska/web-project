@@ -7,6 +7,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
   <!--above this is just for glyphicons-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>This is the title of the page.</title>
   <link href="index-css.css" rel="stylesheet">
@@ -20,9 +21,9 @@
             </div>
             <ul class="nav-links">
                 <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Work</a></li>
-                <li><a href="#">Projects</a></li>
+                <li><a href="#">Discovery</a></li>
+                <li><a href="#">Photos</a></li>
+                <li><a href="#">Contact</a></li>
             </ul>
             <div class="burger">
                 <div class="line1"></div>
@@ -34,7 +35,7 @@
     <script src="./app.js"></script>
 	
 <main>
-  <div class="container">
+  <div class="container-start">
     <div class="column">
       <div class="start-page-left">
         <img src="pictures/image.png" alt="forest img">
@@ -43,7 +44,8 @@
           <hr>
           <h3> Amazing places in America to visit. </h3>
           <p>For some reason — this country, this city, this neighborhood, this particular street — is the place you are living a majority of your life in.</p>
-          <button class="but">LEARN MORE</button>
+          
+          <a style="text-decoration: none; opacity: 1;" href="index1.html"><button class="but">LEARN MORE</button></a>
         </div>
       </div>
     </div>
@@ -71,7 +73,7 @@
   <div class="container-2">
     <h2> TRENDING </h2>
     <div class="container">
-      <div class="column">
+      <div class="column-5">
         <div class="trending-child">
           <img src="pictures/lake-view.png" alt="lake view">
           <div class="trending-text">
@@ -92,7 +94,7 @@
         </div>
       </div>
       <div class="column">
-        <div class="trending-child">
+        <div class="trending-child-3">
           <img src="pictures/snow-view.png" alt="snow-view">
           <div class="trending-text">
             <h3> Dolore magna aliqua </h3>
@@ -135,18 +137,21 @@
         </div>
         </div>
       </div>
-      <div class="col">
-        <div>
-          <img src="pictures/elephant-view.png" alt="">
+      <div class="col-3">
+        <div class="vis">
+          <img src="pictures/elephant-view2.png" alt="">
           <h3> Small title </h3>
           <p style="opacity:0.5"><span class="glyphicon glyphicon-time"></span> 2 min ago </p>
+        </div>
+        <div class="vis">
           <img src="pictures/bird-view.png" alt="">
           <h3> Small title </h3>
           <p style="opacity:0.5"><span class="glyphicon glyphicon-time"></span> 2 min ago </p>
+        </div>
+          <div class="del">
           <img src="pictures/road-view.png" alt="">
           <h3> Small title </h3>
           <p style="opacity:0.5"><span class="glyphicon glyphicon-time"></span> 2 min ago </p>
-
         </div>
       </div>
     </div>
@@ -154,57 +159,61 @@
 </main>
     <!-- Site footer -->
     <footer class="site-footer">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12 col-md-6">
-            <h6>About</h6>
-            <p class="text-justify">Scanfcode.com <i>CODE WANTS TO BE SIMPLE </i> is an initiative  to help the upcoming programmers with the code. Scanfcode focuses on providing the most efficient code or snippets as the code wants to be simple. We will help programmers build up concepts in different programming languages that include C, C++, Java, HTML, CSS, Bootstrap, JavaScript, PHP, Android, SQL and Algorithm.</p>
-          </div>
-
-          <div class="col-xs-6 col-md-3">
-            <h6>Categories</h6>
-            <ul class="footer-links">
-              <li><a href="http://scanfcode.com/category/c-language/">C</a></li>
-              <li><a href="http://scanfcode.com/category/front-end-development/">UI Design</a></li>
-              <li><a href="http://scanfcode.com/category/back-end-development/">PHP</a></li>
-              <li><a href="http://scanfcode.com/category/java-programming-language/">Java</a></li>
-              <li><a href="http://scanfcode.com/category/android/">Android</a></li>
-              <li><a href="http://scanfcode.com/category/templates/">Templates</a></li>
-            </ul>
-          </div>
-
-          <div class="col-xs-6 col-md-3">
-            <h6>Quick Links</h6>
-            <ul class="footer-links">
-              <li><a href="http://scanfcode.com/about/">About Us</a></li>
-              <li><a href="http://scanfcode.com/contact/">Contact Us</a></li>
-              <li><a href="http://scanfcode.com/contribute-at-scanfcode/">Contribute</a></li>
-              <li><a href="http://scanfcode.com/privacy-policy/">Privacy Policy</a></li>
-              <li><a href="http://scanfcode.com/sitemap/">Sitemap</a></li>
-            </ul>
+      <div class="footer-container">
+        <div class="footer-row">
+        <div class="footer-left">
+          <div>
+            <h4>LOGO</h4>
           </div>
         </div>
-        <hr>
-      </div>
-      <div class="container">
-        <div class="row">
-          <div class="col-md-8 col-sm-6 col-xs-12">
-            <p class="copyright-text">Copyright &copy; 2017 All Rights Reserved by 
-         <a href="#">Scanfcode</a>.
-            </p>
+        <div class="footer-row">
+          <div>
+            <ul class="footer-links">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Discovery</a></li>
+              <li><a href="#">Photos</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
           </div>
-
-          <div class="col-md-4 col-sm-6 col-xs-12">
-            <ul class="social-icons">
-              <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
-              <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
-              <li><a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>
-              <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>   
+          <div>
+            <ul class="footer-links">
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Help</a></li>
+              <li><a href="#">Terms</a></li>
+              <li><a href="#">Guidelines</a></li>
+            </ul>
+          </div>
+          <div>
+            <ul class="footer-links">
+              <li><a href="#">Testimonials</a></li>
+              <li><a href="#">Advertise</a></li>
+              <li><a href="#">Integrations</a></li>
+              <li><a href="#">Careers</a></li>
             </ul>
           </div>
         </div>
       </div>
+      </div>
+      <div class="footer-container">
+        <div class="footer-row">
+          <div class="footer-middle">
+            <input type="email" id="email" size="30" placeholder="Email"><span class="glyphicon glyphicon-send"></span>
+            <p style="opacity:0.5;">stay in touch with us for freshest products!</p>
+          </div>
+        </div>
+      </div>
+      <div class="footer-container">
+        <div class="footer-row">
+          <div class="footer-right">     
+            <ul class="footer-links">
+              <li><a href="#" class="fa fa-instagram"></a></li>
+              <li><a href="#" class="fa fa-twitter"></a></li>
+              <li><a href="#" class="fa fa-facebook"></a></li>
+            </ul>
+          </div>
+          </div>
+        </div>
+
 </footer>
 </body>
-
 </html>
